@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Real-time Location Tracker'),
       ),
       body: GoogleMap(
-        initialCameraPosition: CameraPosition(
+        initialCameraPosition: const CameraPosition(
           target: LatLng(23.744287065983727, 90.3841376276092),
           zoom: 16,
           bearing: 5,
@@ -100,11 +100,11 @@ class _HomeScreenState extends State<HomeScreen> {
         myLocationEnabled: true,
         markers: {
           Marker(
-            markerId: MarkerId('1'), // Unique ID for the marker
-            position: LatLng(23.744287065983727, 90.3841376276092), // Marker position
-            // You can customize the marker icon, info window, etc., as needed
-            // icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueGreen), // Example of customizing the marker icon
-            // infoWindow: InfoWindow(title: 'Marker Title', snippet: 'Marker Snippet'), // Example of adding an info window
+            markerId: const MarkerId('1'), // Unique ID for the marker
+            position: const LatLng(23.744287065983727, 90.3841376276092), // Marker position
+             //You can customize the marker icon, info window, etc., as needed
+             icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueGreen), // Example of customizing the marker icon
+             infoWindow: const InfoWindow(title: 'Work Lab', snippet: '13.32653264145'), // Example of adding an info window
           ),
         },
       ),
